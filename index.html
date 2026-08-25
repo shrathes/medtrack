@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedTrack India | Intelligent Healthcare Network</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">✚</span>
+        <span>Med<span>Track</span></span>
+    </a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="ambulance.html">Ambulance</a>
+        <a href="blood.html">Blood</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="primary-btn">Register</a>
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            ● LIVE HEALTHCARE NETWORK
+        </span>
+
+        <h1>
+            Don't just find a hospital.
+            <span>Find the right one.</span>
+        </h1>
+
+        <p>
+            MedTrack uses your location, hospital availability,
+            emergency services and travel time to help you find
+            the most suitable healthcare facility.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="hospitals.html"
+                class="primary-btn large-btn"
+            >
+                📍 Find Hospitals Near Me
+            </a>
+
+            <a
+                href="emergency.html"
+                class="emergency-btn"
+            >
+                🚨 Emergency Mode
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>250+</strong>
+                <span>Hospitals</span>
+            </div>
+
+            <div>
+                <strong>1,200+</strong>
+                <span>Live Resources</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Emergency Network</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-map-container">
+
+        <div id="homeMap"></div>
+
+        <div class="live-map-card">
+
+            <div class="live-dot"></div>
+
+            <div>
+                <strong>LIVE NETWORK</strong>
+                <small>Hospital availability monitoring</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SMART SEARCH -->
+
+<section class="smart-search">
+
+    <div>
+
+        <span class="section-label">
+            SMART SEARCH
+        </span>
+
+        <h2>
+            What healthcare do you need?
+        </h2>
+
+        <p>
+            Combine your location with a medical requirement.
+        </p>
+
+    </div>
+
+
+    <div class="smart-search-grid">
+
+        <a href="hospitals.html?requirement=ICU">
+            🛏️
+            <strong>ICU</strong>
+            <small>Find available ICU beds</small>
+        </a>
+
+        <a href="hospitals.html?requirement=Emergency">
+            🚨
+            <strong>Emergency</strong>
+            <small>Emergency care facilities</small>
+        </a>
+
+        <a href="hospitals.html?requirement=Cardiology">
+            ❤️
+            <strong>Cardiology</strong>
+            <small>Find cardiac specialists</small>
+        </a>
+
+        <a href="hospitals.html?requirement=Ambulance">
+            🚑
+            <strong>Ambulance</strong>
+            <small>Find available ambulances</small>
+        </a>
+
+        <a href="blood.html">
+            🩸
+            <strong>Blood</strong>
+            <small>Check blood availability</small>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="features">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHY MEDTRACK
+        </span>
+
+        <h2>
+            Healthcare decisions made smarter.
+        </h2>
+
+        <p>
+            We combine location, availability and intelligent
+            matching instead of simply showing hospital addresses.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📍</div>
+
+            <h3>Live GPS</h3>
+
+            <p>
+                Find healthcare facilities around your current
+                location.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🟢</div>
+
+            <h3>Live Availability</h3>
+
+            <p>
+                Check beds, ICU, emergency services and ambulances.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🤖</div>
+
+            <h3>Smart Matching</h3>
+
+            <p>
+                Rank hospitals based on multiple factors instead
+                of distance alone.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🚑</div>
+
+            <h3>Emergency Coordination</h3>
+
+            <p>
+                Track emergency requests and ambulance assignment.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EMERGENCY -->
+
+<section class="emergency-banner">
+
+    <div>
+
+        <span class="section-label">
+            EMERGENCY MODE
+        </span>
+
+        <h2>
+            Need help right now?
+        </h2>
+
+        <p>
+            Find suitable emergency facilities based on
+            availability and travel time.
+        </p>
+
+    </div>
+
+
+    <a
+        href="emergency.html"
+        class="emergency-btn"
+    >
+        🚨 Start Emergency Search
+    </a>
+
+</section>
+
+
+<!-- DATA FRESHNESS -->
+
+<section class="freshness-section">
+
+    <div class="freshness-icon">
+        ✓
+    </div>
+
+    <div>
+
+        <span class="section-label">
+            DATA TRANSPARENCY
+        </span>
+
+        <h2>
+            Know when the information was updated.
+        </h2>
+
+        <p>
+            Every hospital availability record includes its
+            latest update time. Outdated information is clearly
+            marked.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="logo">
+            <span class="logo-icon">✚</span>
+            Med<span>Track</span>
+        </div>
+
+        <p>
+            Intelligent healthcare resource discovery.
+        </p>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 MedTrack India • Demo Project
+    </div>
+
+</footer>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="js/hospitals.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

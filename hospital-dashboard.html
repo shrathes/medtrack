@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hospital Dashboard | MedTrack</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            ✚
+        </span>
+
+        Med<span>Track</span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="hospitals.html">
+            Hospitals
+        </a>
+
+        <a
+            href="hospital-dashboard.html"
+            class="active"
+        >
+            Dashboard
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="dashboard-container">
+
+
+<section class="dashboard-header">
+
+    <div>
+
+        <span class="section-label">
+            HOSPITAL PORTAL
+        </span>
+
+        <h1>
+            City Care Hospital
+        </h1>
+
+        <p>
+            Manage live hospital availability.
+        </p>
+
+    </div>
+
+
+    <span class="verified-badge">
+        ✓ VERIFIED HOSPITAL
+    </span>
+
+</section>
+
+
+
+<div class="freshness-card">
+
+    <span>
+        🟢
+    </span>
+
+    <strong>
+        Availability is live
+    </strong>
+
+    <small>
+        Last updated just now
+    </small>
+
+</div>
+
+
+
+<h2 class="dashboard-title">
+    Bed Availability
+</h2>
+
+
+
+<section class="dashboard-cards">
+
+
+<div class="dashboard-card">
+
+    <span>
+        General Beds
+    </span>
+
+    <strong id="generalBeds">
+        32
+    </strong>
+
+    <button
+        onclick="changeBed('general', -1)"
+        class="small-btn"
+    >
+        − 1
+    </button>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>
+        ICU Beds
+    </span>
+
+    <strong id="icuBeds">
+        4
+    </strong>
+
+    <button
+        onclick="changeBed('icu', -1)"
+        class="small-btn"
+    >
+        − 1
+    </button>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>
+        Emergency Beds
+    </span>
+
+    <strong id="emergencyBeds">
+        8
+    </strong>
+
+    <button
+        onclick="changeBed('emergency', -1)"
+        class="small-btn"
+    >
+        − 1
+    </button>
+
+</div>
+
+
+
+<div class="dashboard-card">
+
+    <span>
+        Ambulances
+    </span>
+
+    <strong id="ambulances">
+        2
+    </strong>
+
+    <button
+        onclick="changeAmbulance(-1)"
+        class="small-btn"
+    >
+        − 1
+    </button>
+
+</div>
+
+
+</section>
+
+
+
+<h2 class="dashboard-title">
+    Facilities
+</h2>
+
+
+
+<section class="facility-grid">
+
+
+<button onclick="toggleFacility(this)">
+
+    🫁 Ventilator
+
+    <span>
+        AVAILABLE
+    </span>
+
+</button>
+
+
+
+<button onclick="toggleFacility(this)">
+
+    🫧 Oxygen
+
+    <span>
+        AVAILABLE
+    </span>
+
+</button>
+
+
+
+<button onclick="toggleFacility(this)">
+
+    🩸 Blood Bank
+
+    <span>
+        AVAILABLE
+    </span>
+
+</button>
+
+
+
+<button onclick="toggleFacility(this)">
+
+    CT Scan
+
+    <span>
+        AVAILABLE
+    </span>
+
+</button>
+
+
+
+<button onclick="toggleFacility(this)">
+
+    MRI
+
+    <span>
+        UNAVAILABLE
+    </span>
+
+</button>
+
+
+
+<button onclick="toggleFacility(this)">
+
+    Dialysis
+
+    <span>
+        AVAILABLE
+    </span>
+
+</button>
+
+
+</section>
+
+
+
+<h2 class="dashboard-title">
+    Emergency Requests
+</h2>
+
+
+
+<div class="request-card">
+
+    <div>
+
+        <strong>
+            ER-4821
+        </strong>
+
+        <p>
+            ICU required • 2.4 km away
+        </p>
+
+    </div>
+
+
+    <span class="status busy">
+        PENDING
+    </span>
+
+
+    <button
+        onclick="acceptRequest()"
+        class="primary-btn"
+    >
+        Accept
+    </button>
+
+</div>
+
+
+</main>
+
+
+
+<script src="js/hospital-dashboard.js"></script>
+
+
+</body>
+
+</html>
