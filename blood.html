@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Blood Availability | MedTrack</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">✚</span>
+
+        Med<span>Track</span>
+
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="ambulance.html">Ambulance</a>
+        <a href="blood.html" class="active">Blood</a>
+
+    </nav>
+
+</header>
+
+
+<main class="hospital-page">
+
+    <div class="page-title">
+
+        <div>
+
+            <span class="section-label">
+                BLOOD NETWORK
+            </span>
+
+            <h1>
+                Blood availability
+            </h1>
+
+            <p>
+                Find nearby blood banks and available units.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="blood-selector">
+
+        <button onclick="filterBlood('O+')">
+            O+
+        </button>
+
+        <button onclick="filterBlood('O-')">
+            O-
+        </button>
+
+        <button onclick="filterBlood('A+')">
+            A+
+        </button>
+
+        <button onclick="filterBlood('A-')">
+            A-
+        </button>
+
+        <button onclick="filterBlood('B+')">
+            B+
+        </button>
+
+        <button onclick="filterBlood('B-')">
+            B-
+        </button>
+
+        <button onclick="filterBlood('AB+')">
+            AB+
+        </button>
+
+        <button onclick="filterBlood('AB-')">
+            AB-
+        </button>
+
+    </div>
+
+
+    <div id="bloodResults">
+
+        <div class="blood-card">
+
+            <div class="blood-group">
+                O+
+            </div>
+
+            <div>
+
+                <h3>
+                    City Blood Bank
+                </h3>
+
+                <p>
+                    2.4 km away
+                </p>
+
+                <small>
+                    Updated 5 minutes ago
+                </small>
+
+            </div>
+
+            <strong>
+                4 units
+            </strong>
+
+            <button
+                class="primary-btn"
+                onclick="alert('Demo call initiated')"
+            >
+                Call
+            </button>
+
+        </div>
+
+
+        <div class="blood-card">
+
+            <div class="blood-group">
+                O+
+            </div>
+
+            <div>
+
+                <h3>
+                    Life Blood Centre
+                </h3>
+
+                <p>
+                    4.1 km away
+                </p>
+
+                <small>
+                    Updated 8 minutes ago
+                </small>
+
+            </div>
+
+            <strong>
+                7 units
+            </strong>
+
+            <button
+                class="primary-btn"
+                onclick="alert('Demo call initiated')"
+            >
+                Call
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+function filterBlood(group) {
+
+    alert(
+        "Showing blood availability for " +
+        group +
+        "."
+    );
+
+}
+
+</script>
+
+</body>
+
+</html>
