@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    
+
+    <title>Emergency Mode | MedTrack</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/emergency.css">
+
+</head>
+
+
+<body class="emergency-page">
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            ✚
+        </span>
+
+        Med<span>Track</span>
+
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="hospitals.html">
+            Hospitals
+        </a>
+
+        <a
+            href="emergency.html"
+            class="active"
+        >
+            Emergency
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="emergency-hero">
+
+    <div class="emergency-symbol">
+        🚨
+    </div>
+
+    <span class="section-label">
+        EMERGENCY RESPONSE
+    </span>
+
+    <h1>
+        What do you need?
+    </h1>
+
+    <p>
+        Select the resource you need and MedTrack will
+        identify suitable nearby facilities.
+    </p>
+
+</section>
+
+
+<section class="emergency-options">
+
+    <button onclick="startEmergency('ICU')">
+
+        <span>🛏️</span>
+
+        <strong>ICU</strong>
+
+        <small>
+            Find available ICU beds
+        </small>
+
+    </button>
+
+
+    <button onclick="startEmergency('Emergency')">
+
+        <span>🚨</span>
+
+        <strong>Emergency Care</strong>
+
+        <small>
+            Find active emergency departments
+        </small>
+
+    </button>
+
+
+    <button onclick="startEmergency('Ambulance')">
+
+        <span>🚑</span>
+
+        <strong>Ambulance</strong>
+
+        <small>
+            Find nearby available ambulance
+        </small>
+
+    </button>
+
+
+    <button onclick="startEmergency('Blood')">
+
+        <span>🩸</span>
+
+        <strong>Blood</strong>
+
+        <small>
+            Find blood availability
+        </small>
+
+    </button>
+
+
+    <button onclick="startEmergency('Cardiology')">
+
+        <span>❤️</span>
+
+        <strong>Cardiology</strong>
+
+        <small>
+            Find cardiac specialists
+        </small>
+
+    </button>
+
+
+    <button onclick="startEmergency('Trauma')">
+
+        <span>🏥</span>
+
+        <strong>Trauma Care</strong>
+
+        <small>
+            Find trauma facilities
+        </small>
+
+    </button>
+
+</section>
+
+
+<section
+    id="emergencyResult"
+    class="emergency-result"
+>
+
+</section>
+
+
+</main>
+
+
+<script src="js/hospitals.js"></script>
+<script src="js/emergency.js"></script>
+
+</body>
+
+</html>
